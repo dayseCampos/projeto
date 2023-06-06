@@ -1,0 +1,70 @@
+.main-text{
+	text-align: center;
+}
+
+.main-text h2{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/*materias*/
+.conteudo-materias{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	align-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+.row img{
+	height: auto;
+	width: 100%;
+	border-radius: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.row{
+	padding: 25px;
+	border-radius: 0.5rem;
+	background: transparent;
+	transition: all .40s ease;
+}
+.main-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.row h3{
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--second-color);
+}
+.row h6{
+	color: var(--main-color);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	display: flex;
+}
+.row-icon i{
+	font-size: 21px;
+	color: #ef4444;
+}
+
+.row:hover{
+	transform: scale(1.01) translateY(-5px);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .conteudo-materias {
+      grid-column-gap: 1em;
+    }
+  }
+
+ 

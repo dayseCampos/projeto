@@ -4,12 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Receitinhas</title>
+	<title>Receitas</title>
 
 	<!---css--->
 	<link rel="stylesheet" type="text/css" href="assets/base.css">
-	<link rel="stylesheet" type="text/css" href="assets/receitas2.css">
-	<link rel="icon" href="img/cupcake.png">
+	<link rel="stylesheet" type="text/css" href="assets/receitas.css">
+	<link rel="icon" href="assets/img/base/logo.png">
 
 
 	<!--icons-->
@@ -28,7 +28,7 @@
 
 	<!---header--->
 	<header>
-		<a href="index.html" class="logo"><img src="img/cupcake.png"></a>
+		<a href="index.html" class="logo"><img src="assets/img/base/logo.png"></a>
 
 		<ul class="navbar">
 			<li><a href="index.html">Home</a></li>
@@ -47,6 +47,11 @@
 	<!--receitas-->
 	<section class="receitas">
 		<div class="pesquisa">
+			<div class="titulo" id="titulo1">
+				<h1>Procure sua receita perfeita! ❤️</h1>
+				<h4>Quem aí ama um doce? Seja para comer após uma refeição ou receber a família, temos aqui as melhores
+					sobremesas!</h4>
+			</div>
 			<div id="container-busca">
 				<input type="search" id="search-input" placeholder="Busque a receita aqui" />
 				<button id="buscar">Buscar</button>
@@ -67,47 +72,57 @@
 				</button>
 			</div>
 		</div>
-		<div id="receitas"></div>
+		<div>
+			<div class="titulo">
+				<h1>Procure sua receita perfeita! ❤️</h1>
+				<h4>Quem aí ama um doce? Seja para comer após uma refeição ou receber a família, temos aqui as melhores
+					sobremesas!</h4>
+			</div>
+			<hr>
+
+			<div id="receitas"></div>
+		</div>
 	</section>
 
-	<section>
-        <div class="footer">
-            <div class="principal">
-                <div class="caixa-f">
-                    <h4>Menu</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre mim</a></li>
-                        <li><a href="#hobbies">Hobbies</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="caixa-f">
-                    <h4>Redes sociais</h4>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/dayse-campos-dev/"><i class='bx bxl-linkedin-square'></i></a>
-                        <a href="#"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://github.com/dayseCampos"><i class='bx bxl-github' ></i></a>
-                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                    </div>
-                </div>
+	<!--footer-->
+	<footer>
+		<div class="footer">
+			<div class="principal">
+				<div class="caixa-f">
+					<h4>Menu</h4>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="receitas.html">Receitas</a></li>
+						<li><a href="comunidade.html">Novidades</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</div>
 
 				<div class="caixa-f">
-                    <h4>Colaboradores</h4>
-                    <ul>
-                        <li><a href="#home">Dayse Campos</a></li>
-                        <li><a href="#sobre">Carlos Brittes</a></li>
-                        <li><a href="#destaques">Thiago Espirito Santo</a></li>
-                        <li><a href="#materias">Pedro Pedroca</a></li>
-                        <li><a href="#contato">Dandan</a></li>
-                    </ul>
-                </div>
+					<h4>Colaboradores</h4>
+					<ul>
+						<li><a href="https://github.com/dayseCampos" target="_blank">Dayse Campos</a></li>
+						<li><a href="https://github.com/CarlosBrittes" target="_blank">Carlos Brittes</a></li>
+						<li><a href="https://github.com/itsthiagow" target="_blank">Thiago Espirito Santo</a></li>
+						<li><a href="https://github.com/Pedro-Lucas-Leal" target="_blank">Pedro Lucas Brandão</a></li>
+						<li><a href="https://github.com/DanDan2804" target="_blank">Daniel Figueira</a></li>
+					</ul>
+				</div>
 
-            </div>
-        </div>
-     </section>
+				<div class="caixa-f">
+					<h4>Redes sociais</h4>
+					<div class="social">
+						<a href="#"><i class='bx bxl-linkedin-square'></i></a>
+						<a href="#"><i class='bx bxl-twitter'></i></a>
+						<a href="#"><i class='bx bxl-github'></i></a>
+						<a href="#"><i class='bx bxl-instagram-alt'></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
 
 
 	<!---javascript--->
