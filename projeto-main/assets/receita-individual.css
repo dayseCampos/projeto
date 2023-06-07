@@ -1,0 +1,255 @@
+div {
+    color: #585858;
+    margin-bottom: 2.5rem;
+}
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+/*imagem e titulo*/
+.principal-receita {
+    width: 100%;
+    height: 20em;
+    display: flex;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+}
+
+.imagem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 80%;
+}
+
+.titulos {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    align-items: center;
+}
+
+.titulos h1 {
+    font-size: 2.5em;
+    color: #585858;
+}
+
+.titulos h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.caixa-titulos {
+    width: 50%;
+}
+/*informações*/
+.outros {
+    width: 58%;
+}
+
+.informacoes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.informacoes i {
+    color: #b62025;
+}
+
+.informacao1 {
+    text-align: center;
+    font-size: 1.125rem;
+    width: 33.33%;
+}
+
+h4 {
+    font-weight: 400;
+} 
+
+.informacao {
+    text-align: center;
+    margin-left: 2em;
+    font-size: 1.125rem;
+    border-left: 1px solid #b62025;
+    width: 33.33%;
+}
+
+/*ingredientes*/
+.ingredientes {
+    margin-top: 2.5rem;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.ingredientes h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ingredientes ul li {
+    margin-bottom: 0.75rem;
+}
+.detalhes {
+    margin-bottom: 2.5rem;
+}
+
+/*modo de preparo*/
+.preparo {
+    margin-top: 2.5rem;
+}
+
+/*dicas*/
+.dicas {
+    display: flex;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    width: 100%;
+    gap: 15px;
+    margin-top: 2.5rem;
+    height: auto;
+}
+
+.dicas-img {
+    display: flex;
+    width: 22%;
+    margin-bottom: 0;
+    background-color: #cacaca;
+    border-radius: 10px 0 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.dicas-img img {
+    width: 100%;
+}
+
+.dicas-texto {
+    display: flex;
+    flex-direction: column;
+    padding: .75rem 1rem;
+    font-size: 0.90rem;
+    gap: 5px;
+}
+
+/*comentarios - input*/
+.comentarios {
+    margin-top: 5rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea{
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: var(--bg-color);
+	color: var(--second-color);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+    margin-top: 0.5em;
+	border-radius: 0.5rem;
+	border: solid;
+	border-color:#cacaca;
+}
+textarea{
+	resize: none;
+	height: 220px;
+}
+form .send{
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	background: var(--main-color);
+	color: var(--text-color);
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+	border: none;
+	border-radius: 30px;
+    text-align: center;
+}
+
+form .send:hover{
+	letter-spacing: 2px;
+	opacity: 0.8;
+}
+
+.secao-comentario {
+    font-size: 1.3rem;
+}
+
+/*comentarios já feitos*/
+  
+.respostas {
+    display: flex;
+    gap: 20px;
+}
+
+.avaliacao a i {
+    color: #b62025;
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+}
+
+/*media query*/
+
+@media (max-width: 900px) {
+    .principal-receita {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .titulos {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .imagem {
+        order: 2;
+        width: 100%;
+    }
+    .outros {
+        width: 100%;
+    }
+    .informacoes {
+        width: 100%;
+        border: none;
+    }
+    .informacao {
+        border-left: none;
+    }
+    .informacao1 {
+        margin-left: 0;
+    }
+    .dicas-img {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: #cacaca;
+        border-radius: 10px 0 0 10px;
+    }
+}
